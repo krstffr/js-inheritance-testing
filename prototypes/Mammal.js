@@ -1,6 +1,6 @@
 // Methods
-Mammal.prototype.makeNoise = function(someNoise) {
-	return 'Ugh! Iiiiihii! '+someNoise;
+Mammal.prototype.makeNoise = function() {
+	return 'Ugh! Iiiiihii!';
 };
 
 // Init methods

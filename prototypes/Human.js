@@ -8,8 +8,10 @@ Human.prototype = new Mammal();
 
 // Methods
 Human.prototype.makeNoise = function(someNoise) {
-	console.log(this);
-	return 'I just wanted to speak clearly and say that I am a '+this.prototype+', my name is '+this.name+' and also: '+someNoise;
+	return 'I just wanted to speak clearly and say that my name is '+this.name;
+};
+Human.prototype.makeTalk = function(talk) {
+	return talk;
 };
 
 // Init methods

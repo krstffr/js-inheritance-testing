@@ -16,4 +16,5 @@ Messi.prototype.makeSoccerShot = function() {
 // Init methods
 Messi.prototype.setMessiStuff = function() {
 	this.name = this.name + ', but really Leo Messi';
+	this.soccerSkill *= 10;
 };

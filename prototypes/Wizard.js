@@ -8,7 +8,8 @@ Wizard.prototype = new Human();
 
 // Methods
 Wizard.prototype.makeMagic = function(someNoise) {
-	return 'Magic!!';
+	this.hasMouth = false;
+	return 'Magic!! Removing my own mouth.';
 };
 
 // Init methods

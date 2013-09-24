@@ -1,39 +1,38 @@
-var randomMammal = new Mammal();
-console.log(randomMammal);
-console.log('Has mouth = '+randomMammal.hasMouth);
-console.log('Name: '+randomMammal.name);
+var someMammal = new Mammal();
+console.log('Has this thing got a mouth on it? '+someMammal.hasMouth);
+console.log(someMammal.makeNoise());
+console.log('---');
 
-console.log('------');
+var someHuman = new Human();
+console.log('Has this thing got a mouth on it? '+someHuman.hasMouth);
+console.log(someHuman.makeNoise());
+console.log(someHuman.makeTalk('I suck'));
+console.log('---');
 
-var randomHuman = new Human();
-console.log(randomHuman);
-console.log('Has mouth = '+randomHuman.hasMouth);
-console.log('Name: '+randomHuman.name);
+var someSoccerPlayer = new SoccerPlayer();
+console.log('Has this thing got a mouth on it? '+someSoccerPlayer.hasMouth);
+console.log(someSoccerPlayer.makeNoise());
+console.log(someSoccerPlayer.makeTalk('I am decent at football'));
+console.log(someSoccerPlayer.makeSoccerShot());
+console.log(someSoccerPlayer.name+'\'s soccer skill is: '+someSoccerPlayer.soccerSkill);
+console.log('---');
 
-console.log('------');
+var someWizard = new Wizard();
+console.log('Has this thing got a mouth on it? '+someWizard.hasMouth);
+console.log(someWizard.makeNoise());
+console.log(someWizard.makeTalk('I am magic'));
+console.log(someWizard.makeMagic());
+console.log('Magic power is: '+someWizard.magicLevel);
+console.log('Has this thing got a mouth on it? '+someWizard.hasMouth);
+console.log('---');
 
-var randomWizard = new Wizard();
-console.log(randomWizard);
-console.log('Has mouth = '+randomWizard.hasMouth);
-console.log('Name: '+randomWizard.name);
-console.log('Do magic? '+randomWizard.makeMagic() );
-
-console.log('------');
-
-var randomSoccerPlayer = new SoccerPlayer();
-console.log(randomSoccerPlayer);
-console.log('Has mouth = '+randomSoccerPlayer.hasMouth);
-console.log('Name: '+randomSoccerPlayer.name);
-console.log(randomSoccerPlayer.name+' '+randomSoccerPlayer.makeSoccerShot() );
-
-console.log('------');
-
-var randomMessi = new Messi();
-console.log(randomMessi);
-console.log('Has mouth = '+randomMessi.hasMouth);
-console.log('Name: '+randomMessi.name);
-console.log(randomMessi.name+' '+randomMessi.makeSoccerShot() );
-console.log('The line below should not fail :(');
-console.log('Do magic? '+randomMessi.makeMagic() );
-
-console.log('------');
+var messi = new Messi();
+console.log('Has this thing got a mouth on it? '+messi.hasMouth);
+console.log(messi.makeNoise());
+console.log(messi.makeTalk('I am decent at football'));
+console.log(messi.makeSoccerShot());
+console.log(messi.name+'\'s soccer skill is: '+messi.soccerSkill);
+console.log(messi.makeMagic());
+console.log('Magic power is: '+messi.magicLevel);
+console.log('Has this thing got a mouth on it? '+messi.hasMouth);
+console.log('---');

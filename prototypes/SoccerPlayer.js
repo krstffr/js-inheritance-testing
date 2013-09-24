@@ -14,4 +14,5 @@ SoccerPlayer.prototype.makeSoccerShot = function() {
 // Init methods
 SoccerPlayer.prototype.setSoccerPlayerStuff = function() {
 	this.name = this.name + ' Ronaldinho';
+	this.soccerSkill = Math.random()*10;
 };
