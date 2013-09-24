@@ -1,19 +1,22 @@
-// HERE THE WIZARD STUFF SHOULD BE INCLUDED AS WELL!
-
-// Init / Constructor
-function Messi() {
-	this.setMessiStuff();
-}
-
-// Inherits
-Messi.prototype = new SoccerPlayer();
-
-// Methods
-Messi.prototype.makeSoccerShot = function() {
-	return 'Shooting for krysset AND HITS IT WITHOUT PROBLEMS';
+var Messi = function() {
+	this.setMessiStuff = function() {
+		this.name = 'Leo Messi';
+		this.soccerSkill *= 6;
+		return true;
+	};
+	if (typeof this.makeSoccerShot === 'function') var origMakeSoccerShot = this.makeSoccerShot;
+	this.makeSoccerShot = function() {
+		return origMakeSoccerShot() + ' and also hits it without a problem.';
+	};
+	this.init = function() {
+		this.setMessiStuff();
+	};
+	this.init();
+	
+	return this;
 };
 
-// Init methods
-Messi.prototype.setMessiStuff = function() {
-	this.name = this.name + ', but really Leo Messi';
-};
+Mammal.call(Messi.prototype);
+Human.call(Messi.prototype);
+SoccerPlayer.call(Messi.prototype);
+Wizard.call(Messi.prototype);

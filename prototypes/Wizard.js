@@ -1,18 +1,24 @@
-// Init / Constructor
-function Wizard() {
-	this.setWizardStuff();
-}
-
-// Inherits
-Wizard.prototype = new Human();
-
-// Methods
-Wizard.prototype.makeMagic = function(someNoise) {
-	return 'Magic!!';
+var Wizard = function() {
+	this.setWizardStuff = function() {
+		this.name = this.name + ' the magician';
+		this.magicLevel = 10;
+		return true;
+	};
+	this.makeMagic = function() {
+		this.hasMouth = false;
+		return 'Magic fingers!! I just removed my mouth!';
+	};
+	if (typeof this.makeNoise === 'function') var origMakeNoise = this.makeNoise;
+	this.makeNoise = function() {
+		return origMakeNoise('Im a soccer player!');
+	};
+	this.init = function() {
+		this.setWizardStuff();
+	};
+	this.init();
+	
+	return this;
 };
 
-// Init methods
-Wizard.prototype.setWizardStuff = function() {
-	this.name = this.name + ' the magician';
-	this.magicLevel = 10;
-};
+Mammal.call(Wizard.prototype);
+Human.call(Wizard.prototype);
