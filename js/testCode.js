@@ -14,6 +14,7 @@ console.log('Has this thing got a mouth on it? '+someSoccerPlayer.hasMouth);
 console.log(someSoccerPlayer.makeNoise());
 console.log(someSoccerPlayer.makeTalk('I am decent at football'));
 console.log(someSoccerPlayer.makeSoccerShot());
+console.log(someSoccerPlayer.name+'\'s soccer skill is: '+someSoccerPlayer.soccerSkill);
 console.log('---');
 
 var someWizard = new Wizard();
@@ -30,6 +31,7 @@ console.log('Has this thing got a mouth on it? '+messi.hasMouth);
 console.log(messi.makeNoise());
 console.log(messi.makeTalk('I am decent at football'));
 console.log(messi.makeSoccerShot());
+console.log(messi.name+'\'s soccer skill is: '+messi.soccerSkill);
 console.log(messi.makeMagic());
 console.log('Magic power is: '+messi.magicLevel);
 console.log('Has this thing got a mouth on it? '+messi.hasMouth);
